@@ -36,5 +36,26 @@ int main() {
         passo++;
     } while(passo <= casasRainha);
 
+    printf("\n");
+
+    // -------------------------------
+    // Movimento do Cavalo (loops aninhados)
+    // -------------------------------
+    int movimentosCavalo = 1; // Quantos movimentos "L" queremos simular
+    printf("Movimento do Cavalo:\n");
+
+    for(int l = 1; l <= movimentosCavalo; l++) { // Loop principal para cada "L"
+        int passoCavalo = 1;
+        
+        // Primeira parte do "L": duas casas para baixo
+        while(passoCavalo <= 2) {
+            printf("Baixo\n");
+            passoCavalo++;
+        }
+
+        // Segunda parte do "L": uma casa para a esquerda
+        printf("Esquerda\n");
+    }
+
     return 0;
 }
